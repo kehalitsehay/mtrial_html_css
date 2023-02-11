@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
   </head>
   <body>
-    <header id=""header>
-      <nav class="navbar navbar-light bg-light">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header" class="position-sticky">
+      <nav id="nav-bar" class="navbar navbar-light bg-light ">
         <!-- <img src="" id="header-img" alt=""> -->
         <a class="navbar-brand" href="https://cdnlogo.com/logo/boomerang_474.html">
           <img src="https://cdn.cdnlogo.com/logos/b/16/boomerang.svg" id="header-img" class="d-inline-block align-top" alt="">
@@ -24,105 +25,115 @@
       </nav>
     </header>
 
-    <main>
-      <div class="container">
-        <h2 class="text-center">Handcrafted, home-made masterpieces</h2>
-        <form  id="form" action="https://www.freecodecamp.com/email-submit" class="text-center">
-          <div class="row d-flex justify-content-center">
-            <div class="col-6">
-              <div class="input-group mt-4">
-                <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Username" aria-describedby="basic-addon1" required>
+    <div  class="d-flex justify-content-center">
+      <div id="main-container">
+        <main>
+          <div class="container">
+            <h2 class="text-center">Handcrafted, home-made masterpieces</h2>
+            <form  id="form" action="https://www.freecodecamp.com/email-submit" class="row d-flex justify-content-center text-center">
+          
+                <div class="col-6">
+                  <div class="input-group mt-4">
+                    <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email address" aria-label="Username" aria-describedby="basic-addon1" required>
+                  </div>
+                  <button id="submit" type="submit" class="btn btn-warning my-4 fw-bold">Get Started</button>
+                </div>
+           
+             
+            </form>
+            <div class="container" id="feature">
+              <div class="row">
+                <div class="col-2 text-center ">
+                  <i class="fa fa-fire text-warning" aria-hidden="true"></i>
+                </div>
+                <div class="col-10">
+                  <h2>Premium Materials</h2>
+                  <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
               </div>
-              <button type="button" class="btn btn-warning my-4 fw-bold">Get Started</button>
-            </div>
-          </div>
-         
-        </form>
-        <div class="container">
-          <div class="row">
-            <div class="col-2 text-center ">
-              <i class="fa fa-fire text-warning" aria-hidden="true"></i>
-            </div>
-            <div class="col-10">
-              <h2>Premium Materials</h2>
-              <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
-            </div>
-          </div>
-  
-          <div class="row">
-            <div class="col-2 text-center ">
-              <i class="fa fa-truck text-warning" aria-hidden="true"></i>
-            </div>
-            <div class="col-10">
-              <h2>Fast Shipping</h2>
-              <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-           </div>
-          </div>
-  
-          <div class="row">
-            <div class="col-2 text-center ">
-              <i class="fa fa-battery-full text-warning" aria-hidden="true"></i>
-            </div>
-            <div class="col-10">
-              <h2>Quality Assurance</h2>
-            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
-          </div>
-          </div>
-        
-        </div>
-      </div>
-      <div class="embed-responsive embed-responsive-16by9 text-center">
-        <iframe id="video"  width="560" height="315" class="embed-responsive-item my-3" src="https://www.youtube.com/embed/y8Yv4pnO7qc" allowfullscreen></iframe>
-      </div>
-  
-      <div class="row price d-flex justify-content-between align-self-center mx-2">
-        <div class="card border-dark col-4  mb-3" style="max-width: 18rem;">
-          <div class="card-header text-center fw-bold fs-5">TENOR TROMBONE</div>
-          <div class="card-body text-center" >
-            <p class="fw-bold fs-6">$600</p>
-            <p>Lorem ipsum.</p>
-            <p>Lorem ipsum.</p>
-            <p>Lorem ipsum dolor.</p>
-            <p>Lorem ipsum.</p>
-            <button type="button" class="btn btn-warning my-4 px-4">Select</button>
-          </div>
-        </div>
-  
-        <div class="card border-dark col-4  mb-3" style="max-width: 18rem;">
-          <div class="card-header text-center fw-bold fs-5">BASS  TROMBONE</div>
-          <div class="card-body text-center" >
-            <p class="fw-bold fs-6">$600</p>
-            <p>Lorem ipsum.</p>
-            <p>Lorem ipsum.</p>
-            <p>Lorem ipsum dolor.</p>
-            <p>Lorem ipsum.</p>
-            <button type="button" class="btn btn-warning my-4 px-4">Select</button>
-          </div>
-        </div>
-  
-        <div class="card border-dark col-4  mb-3" style="max-width: 18rem;">
-          <div class="card-header text-center fw-bold fs-5">VALVE  TROMBONE</div>
-          <div class="card-body text-center" >
-            <p class="fw-bold fs-6">$1200</p>
-            <p>Plays similar to a Trumpet.</p>
-            <p>Great for Jazz Bands.</p>
-            <p>Lorem ipsum dolor.</p>
-            <p>Lorem ipsum.</p>
-            <button type="button" class="btn btn-warning my-4 px-4">Select</button>
-          </div>
-        </div>
       
+              <div class="row">
+                <div class="col-2 text-center ">
+                  <i class="fa fa-truck text-warning" aria-hidden="true"></i>
+                </div>
+                <div class="col-10">
+                  <h2>Fast Shipping</h2>
+                  <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+               </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-2 text-center ">
+                  <i class="fa fa-battery-full text-warning" aria-hidden="true"></i>
+                </div>
+                <div class="col-10">
+                  <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+              </div>
+              </div>
+            
+            </div>
+          </div>
+          <div id="how" class="embed-responsive embed-responsive-16by9 text-center">
+            <iframe id="video"  width="560" height="315" class="embed-responsive-item my-3" src="https://www.youtube.com/embed/y8Yv4pnO7qc" allowfullscreen></iframe>
+          </div>
+      
+          <div id="pricing" class="row price d-flex justify-content-between align-self-center mx-auto">
+            <div class="card border-dark col-md-6 col-lg-4 mb-3" style="max-width: 20rem;">
+              <div class="card-header text-center fw-bold fs-5">TENOR TROMBONE</div>
+              <div class="card-body text-center" >
+                <p class="fw-bold fs-6">$600</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+                <button type="button" class="btn btn-warning my-4 px-4">Select</button>
+              </div>
+            </div>
+      
+            <div class="card border-dark col-md-6 col-lg-4 mb-3" style="max-width: 20rem;">
+              <div class="card-header text-center fw-bold fs-5">BASS  TROMBONE</div>
+              <div class="card-body text-center" >
+                <p class="fw-bold fs-6">$600</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+                <button type="button" class="btn btn-warning my-4 px-4">Select</button>
+              </div>
+            </div>
+      
+            <div class="card border-dark col-md-6 col-lg-4  mb-3" style="max-width: 20rem;">
+              <div class="card-header text-center fw-bold fs-5">VALVE  TROMBONE</div>
+              <div class="card-body text-center" >
+                <p class="fw-bold fs-6">$1200</p>
+                <p>Plays similar to a Trumpet.</p>
+                <p>Great for Jazz Bands.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+                <button type="button" class="btn btn-warning my-4 px-4">Select</button>
+              </div>
+            </div>
+          
+          </div>
+        </main>
+    
+        <footer class="d-flex justify-content-end">
+          <div>
+            <nav class="navbar">
+              <a class="navbar-brand nav-link" href="#feature">Privacy</a>
+              <a class="navbar-brand nav-link" href="#how">Terms</a>
+              <a class="navbar-brand nav-link" href="#pricing">Contact</a>
+            </nav>
+            <p id="copyright" class="justify-content-end">Copyright 2016, Original Trombones</p>
+          </div>
+        </footer>
       </div>
-    </main>
+ 
 
-    <footer class="d-flex justify-content-end">
-      <nav class="navbar d-flex justify-content-end">
-            <a class="navbar-brand nav-link" href="#feature">Privacy</a>
-            <a class="navbar-brand nav-link" href="#how">Terms</a>
-            <a class="navbar-brand nav-link" href="#pricing">Contact</a>
-      </nav>
-      <p class="justify-content-end">Copyright 2016, Original Trombones</p>
-    </footer>
+  </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
